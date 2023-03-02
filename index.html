@@ -9,16 +9,37 @@
 </head>
 <body>
     <script>
-        let firstNumber;
-        let secondNumber;
 
-        firstNumber = prompt("Enter first number");
-        secondNumber = prompt("Enter second number");
+    let firstNumber;
+    let secondNumber;
 
-        alert ("Addition result" + " " + (Number(firstNumber) + Number(secondNumber)) + "; " +
-        "Subtraction result" + " " + (Number(firstNumber) - Number(secondNumber)) + "; " +
-        "The result of multiplication" + " " + firstNumber * secondNumber + "; " +
-        "The result of division" + " " + firstNumber / secondNumber )
+    firstNumber = prompt("Enter first number");
+    secondNumber = prompt("Enter second number");
+ 
+    if (firstNumber === null || secondNumber === null) {
+        alert ("Error"); return;
+    } else {
+    
+    alert("Addition result" + " " + (Number(firstNumber) + Number(secondNumber)));
+
+    let isSure = confirm("Are you sure you want to proceed with the operation?");
+    if (firstNumber < secondNumber) {
+    alert (isSure);
+    }
+
+    if (isSure === true) {
+    alert("Subtraction result" + " " + (Number(firstNumber) - Number(secondNumber)));
+    }
+
+    alert("The result of multiplication" + " " + firstNumber * secondNumber);
+
+    if (secondNumber != 0) {
+    alert("The result of division" + " " + firstNumber / secondNumber);
+    } else {
+    alert("You cannot divide by zero");
+    }
+}
+
     </script>
     
 </body>
