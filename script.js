@@ -46,3 +46,12 @@ for (let i = 0; i < arr.length; i++) {
 
 console.log(`Мінімальне число: ${minNum}`); 
 console.log(`Максимальне число: ${maxNum}`); 
+
+let output = '';
+for (let a = 1; a <= 5; a++) {
+  for (let b = 1; b <= a; b++) {
+    output += '#';
+  }
+  output += '\n';
+}
+console.log(output);
