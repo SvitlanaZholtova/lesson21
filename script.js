@@ -86,17 +86,5 @@ for (let i=0; i<numbers.length; i++) {
   getMin (numbers[i]);}
   return getMin (Infinity);
 }
-const numbers = [
-  14,
-  852,
-  234,
-  -13,
-  862,
-  741,
-  852,
-  -963,
-  321,
-  789
-];
 const minNumber = findMinNumber(numbers);
 console.log(minNumber);
